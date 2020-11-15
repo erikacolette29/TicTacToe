@@ -2,9 +2,9 @@
 /// DEAR GOD IT'S ALIVE!!!!!
 /*-------------------------------- Constants --------------------------------*/
 const colors = {
-    'null': 'white',
-     '1': 'blue',
-     '-1': 'red',
+    'null': 'Purple',
+     '1': 'Orange',
+     '-1': 'Crimson',
 }
 
 const winningCombination = [ [0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
@@ -111,10 +111,12 @@ board.forEach(function(sq, indx) {
 
 if(winner === 1 || winner === -1) {
     messageText.innerHTML = `Player ${colors[winner]} has won!`;
+    confetti.start(1500);
+   
 } else if (winner === 'T'){
     messageText.innerHTML = `Its a Cats Game!`
 } else {
-    messageText.innerHTML =  `Game is in progress, it's ${colors[turn]}'s turn!`;
+    messageText.innerHTML =  `Lez Play! It's ${colors[turn]}'s turn!`;
 }
 
 
