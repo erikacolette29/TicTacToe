@@ -7,7 +7,7 @@ Enjoy a beautifully designed tic-tac-toe game with your friends! Look out for th
 
 
 ## Tech Used 
-HTML5 
-Javascript 
-CSS3
+- HTML5 
+- Javascript 
+- CSS3
 
